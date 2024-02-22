@@ -1,0 +1,172 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	color:#909090
+}
+
+/* Base styles */
+body {
+	background-color: #222;
+	color: #fff;
+	font-family: sans-serif;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+	color: #fff;
+  }
+  
+  /* Paragraphs */
+  h1, h2, h3, h4, h5, h6,p {
+	color: #909090;
+	margin-bottom:"5px"
+  }
+  
+  /* Links */
+  a {
+	color: #888;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: #ccc;
+  }
+  
+  /* Buttons */
+  button {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  /* Other elements */
+  ul, ol, li {
+	color: #fff2f2;
+	margin-left:7px;
+  }
+
+  li::marker {
+	color: rgb(195, 195, 255);
+  }
+/* 
+  li::marker {
+	content: '* ';
+	font-size: 1.2em;
+  }
+   */
+  ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+  }
+  
+  li {
+	counter-increment: my-awesome-counter;
+	list-style-type: circle;
+	margin: 0.25rem;
+  }
+
+
+  /* li::before {
+	content: counter(my-awesome-counter);
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	text-align: center;
+	margin-right: 0.5rem;
+  }
+   */
+  /* Accessibility considerations */
+  * {
+	color-adjust: exact;
+	-webkit-print-color-adjust: exact;
+  }
+  
+  /* Adjust as needed */
+  .text-primary {
+	color: #00acee;
+  }
+  
+  .text-secondary {
+	color: #888;
+  }
+  
+  .bg-primary {
+	background-color: #00acee;
+	color: #fff;
+  }
+  
+  /* Dark mode toggle (optional) */
+  #dark-mode-toggle {
+	background-color: #444;
+	color: #fff;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+  }
+  
+  /* Media query for light mode (optional) */
+  @media (prefers-color-scheme: light) {
+	body {
+	  background-color: #fff;
+	  color: #222;
+	}
+  
+	p {
+	  color: #999999;
+	}
+  
+	a {
+	  color: #007bff;
+	}
+  
+	button {
+	  background-color: #fff;
+	  color: #818181;
+	}
+  
+	ul, ol, li {
+	  color: #909090;
+	  padding:2px;
+	}
+  
+	.text-primary {
+	  color: #007bff;
+	}
+  
+	.text-secondary {
+	  color: #ccc;
+	}
+  
+	.bg-primary {
+	  background-color: #007bff;
+	  color: #fff;
+	}
+  
+	#dark-mode-toggle {
+	  background-color: #fff;
+	  color: #333;
+	}
+  }
+  

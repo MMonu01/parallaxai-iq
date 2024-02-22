@@ -1,0 +1,2 @@
+# parallax-ai-frontend
+# parallaxai

@@ -1,8 +1,7 @@
-# <p>Parallax AI</p>  
+</p>  <img width="242" alt="Logo" src="https://github.com/MMonu01/parallaxai-iq/assets/112859151/de49ba2e-aafa-4cdd-aa73-18b994dc8c31">
+
   <div ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>
   
-  <div align="left"> <img width="100px" height="100px" border-![logo-removebg-preview](https://github.com/MMonu01/parallaxai-iq/assets/112859151/6e5ec115-14b5-4cc8-85de-28df38a478df)
-radius="100px" margin="20px" src="https://lh3.googleusercontent.com/a/ACg8ocJz_3Fut3nwlEeUULyzM5Z8zmSUn-qLokS3zrxtBoyspw=s432-c-no" alt="logo"></div>
 
 
 # Tech Stacks:

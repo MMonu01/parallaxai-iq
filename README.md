@@ -24,9 +24,9 @@
 
   
    ## How does the chat system works
-    ### Any question asked is replied through the use of gemini api.
-    ### messages are saved in the mongodb database if user is logged in to help user find their previous chat messages.
-    ### Gemini api implimentation github Link: <a href="https://github.com/MMonu01/geminiai">github</a>
+     Any question asked is replied through the use of gemini api.
+     messages are saved in the mongodb database if user is logged in to help user find their previous chat messages.
+   #### Gemini api implimentation github Link: <a href="https://github.com/MMonu01/geminiai">github</a>
    
    
    

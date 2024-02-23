@@ -4,9 +4,9 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
-    "dev": " node server-index",
+    "dev": " node index",
     "build": "vite build",
-    "preview": "cross-env NODE_ENV=production node server-index"
+    "preview": "cross-env NODE_ENV=production node index"
   },
   "author": "Md Monu",
   "dependencies": {

@@ -52,7 +52,7 @@ userRouter.post("/google-login", async (req, res, next) => {
         numbers: true,
         symbols: true,
       });
-      new_user = new userModel({ name, email, password, profile_image: picture });
+     const  new_user = new userModel({ name, email, password, profile_image: picture });
       await new_user.save();
       user = new_user;
     }

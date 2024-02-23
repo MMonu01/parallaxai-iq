@@ -160,7 +160,7 @@ const Sidebar = ({ showLoginModal, ...props }) => {
               value={search_chat}
               onChange={(e) => setSearchChat(e.target.value)}
               onKeyUp={handleKeyDown}
-              className="w-full rounded-lg border border-slate-300 p-3 pr-10 text-sm text-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 "
+              className="w-full rounded-lg border border-slate-300 p-3 pr-10 text-sm bg-black focus:outline-none focus:ring-2 focus:ring-blue-500 "
               placeholder="Search chats"
               rows="1"
               required

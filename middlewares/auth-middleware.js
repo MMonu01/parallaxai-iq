@@ -20,7 +20,7 @@ export const AuthMiddleware = (req, res, next) => {
         req.userId = decoded.userId;
 
         const new_token = jwt.sign({ userId: decoded.userId }, process.env.token_secret, { expiresIn: 7 * 24 * 60 * 60, algorithm: process.env.jwt_algorithm });
-        res.cookie("token", new_token, { maxAge: 7 * 24 * 60 * 60 * 1000, sameSite: "none", secure: true });
+        res.cookie("token", new_token, { maxAge: 7 * 24 * 60 * 60 * 1000,  secure: true });
       }
     });
   }

@@ -1,22 +1,18 @@
 import fs from "node:fs/promises";
 import express from "express";
 import "dotenv/config";
-import cookieParser from "cookie-parser"
+import cookieParser from "cookie-parser";
 
-// import cors from "cors";
+import { Connection } from "./server/config/db.js";
 
-import { Connection } from "./config/db.js";
+import { AuthMiddleware } from "./server/middlewares/auth-middleware.js";
 
-import { AuthMiddleware } from "./middlewares/auth-middleware.js";
-
-import { userRouter } from "./routes/user-route.js";
-import { chatRouter } from "./routes/chat-route.js";
+import { userRouter } from "./server/routes/user-route.js";
+import { chatRouter } from "./server/routes/chat-route.js";
 
 const isProduction = process.env.NODE_ENV === "production";
 
 const app = express();
-
-// app.use(cors({ credentials: true, origin: process.env.project_url }));
 
 app.use(express.json());
 app.use(cookieParser(process.env.cookie_parser_key));
@@ -30,7 +26,7 @@ if (!isProduction) {
   });
   app.use(vite.middlewares);
 } else {
-  app.use(express.static("./dist/client"));
+  app.use(express.static("./dist"));
 }
 
 app.get("*", async (req, res) => {
@@ -42,7 +38,7 @@ app.get("*", async (req, res) => {
       template_html = await fs.readFile("./index.html", "utf-8");
       template_html = await vite.transformIndexHtml(url, template_html);
     } else {
-      template_html = await fs.readFile("./dist/client/index.html", "utf-8");
+      template_html = await fs.readFile("./dist/index.html", "utf-8");
     }
     res.status(200).send(template_html);
   } catch (e) {

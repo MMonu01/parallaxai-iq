@@ -48,9 +48,13 @@ export const LoginSlice = createSlice({
       state.question = "";
       return state;
     },
+
+    LOGOUT: (state) => {
+      return initialState;
+    },
   },
 });
 
-export const { CHAT_GET_CHAT_LIST, CHAT_SET_CHAT_ID, CHAT_GET_MESSAGE_LIST, CHAT_GET_QUESTION_REPLY, CHAT_SET_QUESTION, CHAT_RESET_CHAT_DATA } = LoginSlice.actions;
+export const { CHAT_GET_CHAT_LIST, CHAT_SET_CHAT_ID, CHAT_GET_MESSAGE_LIST, CHAT_GET_QUESTION_REPLY, CHAT_SET_QUESTION, CHAT_RESET_CHAT_DATA, LOGOUT } = LoginSlice.actions;
 
 export default LoginSlice.reducer;

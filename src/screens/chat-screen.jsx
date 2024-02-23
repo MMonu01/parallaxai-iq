@@ -25,13 +25,13 @@ function ChatScreen(props) {
   }, [is_login_modal_hidden]);
 
   return (
-    <>
-      <div className="flex gap-2 max-[550px]:flex-col max-[550px]:gap-0 h-screen  overflow-y-scroll no-scrollbar bg-black">
+    <div className="w-full bg-black">
+      <div className="flex gap-2 max-[550px]:flex-col max-[550px]:gap-0 h-screen m-auto  overflow-y-scroll no-scrollbar bg-black" style={{ maxWidth: "1200px" }}>
         <Sidebar showLoginModal={showLoginModal} />
         <ChatContainer />
       </div>
       <LoginModal is_login_modal_hidden={is_login_modal_hidden} hideLoginModal={hideLoginModal} />
-    </>
+    </div>
   );
 }
 

@@ -64,7 +64,7 @@ const Sidebar = ({ showLoginModal, ...props }) => {
   };
 
   return (
-    <aside className="flex bg-zinc-500 bg-black ">
+    <aside className="flex bg-zinc-500 bg-black max-[550px]:-mb-20">
       {/* First Column */}
       <div className="flex h-screen w-12 flex-col max-[550px]:flex-row max-[550px]:h-auto max-[550px]:justify-center max-[550px]:gap-4 bg-black max-[550px]:w-full items-center space-y-8 border-r border-slate-300 py-8 max-[550px]:py-0 max-[550px]:pt-2 sm:w-16 bg-black">
         {/* Logo */}
@@ -180,12 +180,10 @@ const Sidebar = ({ showLoginModal, ...props }) => {
           <div className="overflow-auto bg-zinc-900 flex flex-col h-80">
             {props.chat_list.map((chat, i) => {
               return (
-                <>
-                  <div type="button" onClick={() => getMessage(chat._id)} className={`flex w-full flex-col gap-y-2 rounded-lg px-3 py-2 text-left transition-colors text-slate-200 duration-200 hover:bg-slate-800 focus:outline-none ${chat._id === props.chatId ? "bg-slate-800" : ""}`} key={i}>
-                    <h1 className="text-sm font-medium capitalize text-sm text-slate-200">{chat.preview.length > 30 ? <>{chat.preview.slice(0, 30)}...</> : chat.preview}</h1>
-                    <p className="text-xs text-slate-400">{chat.date}</p>
-                  </div>
-                </>
+                <div type="button" onClick={() => getMessage(chat._id)} className={`flex w-full flex-col gap-y-2 rounded-lg px-3 py-2 text-left transition-colors text-slate-200 duration-200 hover:bg-slate-800 focus:outline-none ${chat._id === props.chatId ? "bg-slate-800" : ""}`} key={i}>
+                  <h1 className="text-sm font-medium capitalize text-sm text-slate-200">{chat.preview.length > 30 ? <>{chat.preview.slice(0, 30)}...</> : chat.preview}</h1>
+                  <p className="text-xs text-slate-400">{chat.date}</p>
+                </div>
               );
             })}
           </div>

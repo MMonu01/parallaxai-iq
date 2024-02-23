@@ -12,12 +12,9 @@ export const LoginSlice = createSlice({
       state.datalist = { ...state.datalist, ...action.payload };
       return state;
     },
-    LOGOUT: (state) => {
-      return initialState;
-    },
   },
 });
 
-export const { GET_USER_DETAILS, LOGOUT } = LoginSlice.actions;
+export const { GET_USER_DETAILS } = LoginSlice.actions;
 
 export default LoginSlice.reducer;

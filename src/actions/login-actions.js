@@ -3,7 +3,8 @@ import { ApiUrl } from "~/env";
 import { Alertify } from "~/scripts/Alertify";
 import { ErrorExtractor } from "~/scripts/Error-extractor";
 
-import { GET_USER_DETAILS, LOGOUT } from "~/reducers/login-reducer";
+import { LOGOUT } from "~/reducers/chat-reducer";
+import { GET_USER_DETAILS } from "~/reducers/login-reducer";
 
 /**
  * @description function to get user login

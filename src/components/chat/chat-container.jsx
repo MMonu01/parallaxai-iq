@@ -44,7 +44,7 @@ const ChatContainer = (props) => {
 
   return (
     <>
-      <div className="flex h-[97vh] max-[550px]:h-[77vh]  w-full flex-col p-5 pb-0">
+      <div className="flex h-[97vh] max-[550px]:h-[77vh] m-auto  w-full flex-col p-5 pb-0" style={{ maxWidth: "850px" }}>
         <div id="chat-box" className="flex-1  space-y-6 overflow-auto rounded-2xl  bg-black outline-red   p-4 text-sm leading-6 text-slate-900 shadow-sm sm:text-base sm:leading-7 border-white" style={{ border: "2px solid" }}>
           {props.message_list.map((message, i) => {
             return (
@@ -113,7 +113,7 @@ const ChatContainer = (props) => {
           <label htmlFor="chat-input" className="sr-only">
             Enter your prompt...
           </label>
-          <div className="relative rounded-xl " style={{ border: ".5px solid gray" }}>
+          <div className="relative rounded-full " style={{ border: ".5px solid gray" }}>
             <textarea
               id="chat-input"
               name="question"
@@ -121,7 +121,7 @@ const ChatContainer = (props) => {
               ref={question_ref}
               onChange={(e) => setQuestion(e.target.value)}
               onKeyUp={handleKeyDown}
-              className="block w-full resize-none rounded-xl border-none bg-zinc-900 p-4 pl-10 pr-20 max-[550px]:pl-2   text-sm text-slate-300  sm:text-base"
+              className="block w-full resize-none rounded-full border-none bg-zinc-900 p-4 pl-10 pr-20 max-[550px]:pl-2   text-sm text-slate-300  sm:text-base"
               placeholder="Enter your prompt..."
               rows="1"
               required
@@ -130,8 +130,8 @@ const ChatContainer = (props) => {
               type="button"
               onClick={generateReply}
               disabled={question.length < 1 || loader}
-              className={`absolute  bottom-2 right-2.5 rounded-lg ${
-                question.length < 1 || loader ? "bg-blue-400 cursor-not-allowed" : "bg-blue-700 hover:bg-blue-800"
+              className={`absolute  bottom-2 right-2.5 rounded-full ${
+                question.length < 1 || loader ? "bg-blue-300 cursor-not-allowed" : "bg-blue-700 hover:bg-blue-800"
               } px-4 py-2 text-sm font-medium text-slate-200  focus:outline-none focus:ring-4 focus:ring-blue-300  sm:text-base flex gap-2 items-center `}
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">

@@ -1,7 +1,7 @@
 # <p align="center" >Parallax AI</p>  
   <div align="center" ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>
   
-  <div align="center"> <img width="40%" src="https://healthkart-ten.vercel.app/static/media/webLogo.93e99be5e0849bd646d7.png" alt="logo"></div>
+  <div align="center"> <img width="100px" height="100px" margin="20px" src="https://lh3.googleusercontent.com/a/ACg8ocJz_3Fut3nwlEeUULyzM5Z8zmSUn-qLokS3zrxtBoyspw=s432-c-no" alt="logo"></div>
 
 
 ## Tech Stacks:

@@ -8,13 +8,13 @@
 ##### HTML  |  CSS  |  Tailwind  |  JavaScript  |  React  |  Vite  |  Redux  |  Express.js  |  MongoDB  |  Node.js
    
 # Features
-   1. Login, Logout
-   2. create new chat
-   3. save previous chats
-   4. Search previous chats
-   3. Get text answer to any of your questions
-   4. See your profile
-   5. Start chat without login
+  - [x] Login, Logout
+   - [x] create new chat
+   - [x] save previous chats
+   - [x] Search previous chats
+   - [x] Get text answer to any of your questions
+   - [x] See your profile
+   - [x] Start chat without login
    
 
    

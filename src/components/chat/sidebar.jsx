@@ -12,12 +12,6 @@ const Sidebar = ({ showLoginModal, ...props }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    if (props.logged_in_success) {
-      props.Chat_Get_Chat_List();
-    }
-  }, []);
-
-  useEffect(() => {
     const handler = (e) => !e.target.matches(".userProfile") && setIsOpen(false);
     isOpen && window.addEventListener("click", handler);
     return () => {

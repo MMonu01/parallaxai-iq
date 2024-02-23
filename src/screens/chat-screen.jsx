@@ -5,16 +5,16 @@ import Sidebar from "~/components/chat/sidebar";
 import LoginModal from "~/components/common/login-modal";
 import ChatContainer from "~/components/chat/chat-container";
 
+import { ChatGetChatList } from "~/actions/chat-actions";
+
 function ChatScreen(props) {
   const [is_login_modal_hidden, setLoginModalHidden] = useState(true);
 
-  const hideLoginModal = () => {
-    setLoginModalHidden(true);
-  };
-
-  const showLoginModal = () => {
-    setLoginModalHidden(false);
-  };
+  useEffect(() => {
+    if (props.logged_in_success) {
+      props.Chat_Get_Chat_List();
+    }
+  }, [props.logged_in_success]);
 
   useEffect(() => {
     const handler = (e) => !e.target.matches(".userProfile") && !e.target.matches(".loginModal") && !e.target.matches(".userHistory") && !e.target.matches(".loginButton") && hideLoginModal();
@@ -23,6 +23,14 @@ function ChatScreen(props) {
       window.removeEventListener("click", handler);
     };
   }, [is_login_modal_hidden]);
+
+  const hideLoginModal = () => {
+    setLoginModalHidden(true);
+  };
+
+  const showLoginModal = () => {
+    setLoginModalHidden(false);
+  };
 
   return (
     <div className="w-full bg-black">
@@ -38,4 +46,7 @@ function ChatScreen(props) {
 const mapStateToProps = (state) => ({
   logged_in_success: state.login_store.datalist?.logged_in_success,
 });
-export default connect(mapStateToProps)(ChatScreen);
+const mapDispatchToProps = (dispatch) => ({
+  Chat_Get_Chat_List: () => dispatch(ChatGetChatList()),
+});
+export default connect(mapStateToProps, mapDispatchToProps)(ChatScreen);

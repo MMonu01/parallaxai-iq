@@ -4,18 +4,8 @@
   <div align="center"> <img width="100px" height="100px" margin="20px" src="https://lh3.googleusercontent.com/a/ACg8ocJz_3Fut3nwlEeUULyzM5Z8zmSUn-qLokS3zrxtBoyspw=s432-c-no" alt="logo"></div>
 
 
-## Tech Stacks:
-   1. HTML
-   2. CSS
-   3. Java Script
-   4. Tailwind
-   5. React
-   6. vite
-   7. Redux
-   8. Express.js
-   9. MongoDB
-   10. Node.js
-   
+# Tech Stacks:
+##### HTML  |  CSS  |  Tailwind  |  JavaScript  |  React  |  Vite  |  Redux  |  Express.js  |  MongoDB  |  Node.js
    
 # Features
    1. Login, Logout

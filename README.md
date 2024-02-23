@@ -1,7 +1,8 @@
-# <p align="center" >Parallax AI</p>  
-  <div align="center" ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>
+# <p>Parallax AI</p>  
+  <div ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>
   
-  <div align="center"> <img width="100px" height="100px" margin="20px" src="https://lh3.googleusercontent.com/a/ACg8ocJz_3Fut3nwlEeUULyzM5Z8zmSUn-qLokS3zrxtBoyspw=s432-c-no" alt="logo"></div>
+  <div align="left"> <img width="100px" height="100px" border-![logo-removebg-preview](https://github.com/MMonu01/parallaxai-iq/assets/112859151/6e5ec115-14b5-4cc8-85de-28df38a478df)
+radius="100px" margin="20px" src="https://lh3.googleusercontent.com/a/ACg8ocJz_3Fut3nwlEeUULyzM5Z8zmSUn-qLokS3zrxtBoyspw=s432-c-no" alt="logo"></div>
 
 
 # Tech Stacks:
@@ -40,3 +41,6 @@
 
 <img width="160" alt="Capture-side" src="https://github.com/MMonu01/parallaxai-iq/assets/112859151/c12d45e6-9bde-4ba6-803c-f053f7e5cb26">
 <img width="159" alt="userinfo" src="https://github.com/MMonu01/parallaxai-iq/assets/112859151/cb3b5386-e8f4-4646-9aba-4634ab018df7">
+<img width="159" alt="userinfo" src="https://github.com/MMonu01/parallaxai-iq/assets/112859151/eac6116e-e785-47b2-b543-10df8c20efc9">
+![logo-removebg-preview](https://github.com/MMonu01/parallaxai-iq/assets/112859151/eac6116e-e785-47b2-b543-10df8c20efc9)
+

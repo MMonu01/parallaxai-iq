@@ -1,6 +1,4 @@
-Note: please refresh product details / cart page if you don't get updated data
-
-# <p align="center" >vigorwizard.com</p>  
+# <p align="center" >Parallax AI</p>  
   <div align="center" ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>
   
   <div align="center"> <img width="40%" src="https://healthkart-ten.vercel.app/static/media/webLogo.93e99be5e0849bd646d7.png" alt="logo"></div>

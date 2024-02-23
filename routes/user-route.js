@@ -59,8 +59,8 @@ userRouter.post("/google-login", async (req, res, next) => {
     const token = jwt.sign({ userId: user._id }, process.env.token_secret, { expiresIn: 7 * 24 * 60 * 60, algorithm: process.env.jwt_algorithm });
     const refresh_token = jwt.sign({ userId: user._id }, process.env.refresh_token_secret, { expiresIn: 28 * 24 * 60 * 60, algorithm: process.env.jwt_algorithm });
 
-    res.cookie("token", token, { maxAge: 7 * 24 * 60 * 60 * 1000, sameSite: "none", secure: true });
-    res.cookie("refresh_token", refresh_token, { maxAge: 28 * 24 * 60 * 60 * 1000, sameSite: "none", secure: true });
+    res.cookie("token", token, { maxAge: 7 * 24 * 60 * 60 * 1000,  secure: true });
+    res.cookie("refresh_token", refresh_token, { maxAge: 28 * 24 * 60 * 60 * 1000, secure: true });
     res.status(200).send({ data: { logged_in_success: true } });
   } catch (err) {
     next(err);

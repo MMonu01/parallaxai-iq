@@ -4,7 +4,7 @@ import "dotenv/config";
 export const GeminiAi = (text) => {
   const genAI = new GoogleGenerativeAI(process.env.gemini_api_key);
 
-  const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
+  const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
   return model.generateContent([text]);
 };

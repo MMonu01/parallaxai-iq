@@ -11,7 +11,7 @@ parallaxai is a chatbot that can answer any question you ask to it.
 # Features
   - [x] Login, Logout
    - [x] create new chat
-   - [x] save previous chats
+   - [x] save chats
    - [x] Search previous chats
    - [x] Get text answer to any of your questions
    - [x] See your profile

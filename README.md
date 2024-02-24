@@ -1,3 +1,4 @@
+parallaxai is a chatbot that can answer any question you ask to it.
 </p>  <img width="242" alt="Logo" src="https://github.com/MMonu01/parallaxai-iq/assets/112859151/de49ba2e-aafa-4cdd-aa73-18b994dc8c31">
 
   <div ><a href="https://parallaxai-iq.cyclic.app">Deployed Link</a></div>

@@ -6,7 +6,7 @@ parallaxai is a chatbot that can answer any question you ask to it.
 
 
 # Tech Stacks:
-##### HTML  |  CSS  |  Tailwind  |  JavaScript  |  React  |  Vite  |  Redux  |  Express.js  |  MongoDB  |  Node.js
+##### HTML  |  CSS  |  Tailwind  |  JavaScript  |  React  |  Vite  |  Redux-toolkit  |  Express.js  |  MongoDB  |  Node.js
    
 # Features
   - [x] Login, Logout

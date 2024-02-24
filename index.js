@@ -61,13 +61,11 @@ app.use((req, res, next) => {
 
 app.use("/chat", chatRouter);
 
-app.listen(process.env.port, async () => {
-  try {
-    await Connection;
-
-    console.log("Successfully connected to db");
-  } catch (err) {
-    console.log("Failed to connect to db");
-  }
-  console.log(`server is running at port ${process.env.port}`);
+Connection.then(() => {
+  console.log("Successfully connected to db");
+  app.listen(process.env.port, () => {
+    console.log(`server is running at port ${process.env.port}`);
+  });
+}).catch((err) => {
+  console.log("Failed to connect to db");
 });
